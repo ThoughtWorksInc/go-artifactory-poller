@@ -1,0 +1,14 @@
+{
+   "results": [
+   {
+       "version": "1.2",
+           "integration": false
+   },{
+   "version": "1.0-SNAPSHOT",
+           "integration": true
+},{
+   "version": "1.0",
+           "integration": false
+}
+   ]
+}

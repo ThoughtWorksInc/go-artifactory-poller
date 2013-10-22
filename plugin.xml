@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<go-plugin id="artifactorypro" version="1">
+<about>
+    <name>Maven Artifactory plugin</name>
+    <version>0.1.0</version>
+    <target-go-version>13.3</target-go-version>
+    <description>Polls an ArtifactoryPro repository</description>
+    <vendor>
+        <name>Sriram Narayan</name>
+        <url>https://github.com/ThoughtWorksInc/go-artifactory-poller/blob/master/README.md</url>
+    </vendor>
+</about>
+</go-plugin>
+

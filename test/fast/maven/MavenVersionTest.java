@@ -13,6 +13,6 @@ public class MavenVersionTest {
         v.setArtifactId("a");
         v.setGroupId("g");
         assertThat(v.getV_Q(), is(label));
-        assertThat(v.getRevisionLabel(), is("g:a."+label));
+        assertThat(v.getRevisionLabel(), is("g:a." + label));
     }
 }

@@ -24,7 +24,7 @@ public class RepositoryClientTest {
     @Test
     public void shouldGetVersionInfo() {
         LookupParams params = new LookupParams(new HttpRepoURL("http://localhost:8081/artifactory", "godev", "cru1s3"), "libs-release-local", "commons-logging", "commons-logging", null, null, null);
-        MavenVersion version = new MavenVersion("1.1.3");
+        MavenVersion version = new MavenVersion("3.1.1");
         RepositoryClient repositoryClient = new RepositoryClient(params);
         repositoryClient.setVersionInfoWrapper(version);
         PackageRevision packageRevision = version.toPackageRevision();

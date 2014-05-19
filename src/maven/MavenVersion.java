@@ -19,16 +19,16 @@ public class MavenVersion extends Version {
     }
 
     public String getRevisionLabel() {
-        if(qualifier != null)
+        if (qualifier != null)
             return String.format("%s:%s.%s%s%s", groupId, artifactId, version, lastDelimiter, qualifier);
         return String.format("%s:%s.%s", groupId, artifactId, version);
     }
 
     public PackageRevision toPackageRevision() {
-        PackageRevision packageRevision = new PackageRevision(getRevisionLabel(), lastModified, modifiedBy,null, trackBackUrl);
+        PackageRevision packageRevision = new PackageRevision(getRevisionLabel(), lastModified, modifiedBy, null, trackBackUrl);
         packageRevision.addData(LookupParams.PACKAGE_LOCATION, location);
         packageRevision.addData(LookupParams.PACKAGE_VERSION, getV_Q());
-        if(errorMessage != null)
+        if (errorMessage != null)
             packageRevision.addData("ERRORMSG", errorMessage);
         return packageRevision;
     }

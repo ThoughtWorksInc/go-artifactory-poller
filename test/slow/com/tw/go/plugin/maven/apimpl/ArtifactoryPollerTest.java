@@ -6,11 +6,11 @@ import com.tw.go.plugin.util.HttpRepoURL;
 import com.tw.go.plugin.util.RepoUrl;
 
 public class ArtifactoryPollerTest {
-//    @Test
-    public void testCheckPackage(){
+    //    @Test
+    public void testCheckPackage() {
         LookupParams params = new LookupParams(
                 (HttpRepoURL) RepoUrl.create("http://localhost:2201/nexus/content/repositories/releases/",
-                        "deployment", "deployment123"), "repoId", "com.thoughtworks.studios.go","book_management", null, null,null);
+                        "deployment", "deployment123"), "repoId", "com.thoughtworks.studios.go", "book_management", null, null, null);
         PackageRevision packageRevision = new ArtifactoryPoller().poll(params);
         System.out.println(packageRevision.getRevision());
     }
